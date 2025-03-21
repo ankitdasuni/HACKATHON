@@ -1,21 +1,21 @@
-import React, { useState } from 'react'
-import {assets} from '../assets/assets_frontend/assets'
-import { NavLink, useNavigate } from 'react-router-dom'
+import React, { useState } from "react";
+import { assets } from "../assets/assets_frontend/assets";
+import { NavLink, useNavigate } from "react-router-dom";
 // import {assets_admin} from '../assets/assets_admin/assets'
 // import { NavLink } from 'react-router-dom'
-function NavBar()  {
-    const navigate = useNavigate();
-    const [showMenu, setShowMenu] =useState(false)
-    const [token, setToken] =useState(true)
-    const [showNav, setShowNav] = useState(true)
-    const handleOnClick = () => {
-        navigate('/login' );
-        setShowNav(false)
-    }
-    const handleLogoClick = () => {
-        navigate('/');
-        setShowNav(true)
-    };
+function NavBar() {
+  const navigate = useNavigate();
+  const [showMenu, setShowMenu] = useState(false);
+  const [token, setToken] = useState(true);
+  const [showNav, setShowNav] = useState(true);
+  const handleOnClick = () => {
+    navigate("/login");
+    setShowNav(false);dd
+  };
+  const handleLogoClick = () => {
+    navigate("/");
+    setShowNav(true);
+  };
 
   return (
     <div className='flex items-center justify-between text-sm py-2  mb-5 border-b border-b-gray-400 px-12'>
@@ -57,7 +57,7 @@ function NavBar()  {
             {/* <button onClick={handleOnClick} className=' bg-red-400 text-white px-8 py-3 rounded-full fount-light hidden md:block'>Create Account</button> */}
         </div>
     </div>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
