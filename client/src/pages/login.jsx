@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import reactimg from "../assets/react.svg";
+// import reactimg from "../assets/react.svg";
 import InputBox from "../components/InputBox";
 
 export default function Login() {
@@ -10,12 +10,12 @@ export default function Login() {
       <div className="my-2">
         <img
           className="object-cover w-full h-full rounded-xl"
-          src={reactimg}
+          // src={reactimg}
         ></img>
       </div>
       <div className="flex flex-col gap-6 bg-white  m-2 rounded-xl items-center pt-32">
         <div className="w-48 flex items-center justify-center">
-          <img src={reactimg} />
+          {/* <img src={reactimg} /> */}
         </div>
         <div className=" flex flex-col gap-6">
           <div className="flex flex-col items-center">
