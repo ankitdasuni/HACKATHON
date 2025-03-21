@@ -18,7 +18,7 @@ function NavBar()  {
     };
 
   return (
-    <div className='flex items-center justify-between text-sm py-4  mb-5 border-b border-b-gray-400 px-12'>
+    <div className='flex items-center justify-between text-sm py-2  mb-5 border-b border-b-gray-400 px-12'>
         <img onClick={handleLogoClick} className='w-44 cursor-pointer' src={assets.logo} alt='' />
         {showNav && <ul className='hidden md:flex items-start gap-5 front-medium'>
             <NavLink to='/'>

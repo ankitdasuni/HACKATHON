@@ -4,10 +4,10 @@ import { assets } from '../assets/assets_frontend/assets'
 function Footer() {
     return (
         <div className='md:x-10'>
-            <div className='flex flex-col sm:grid grid-cols-[3rf_1rf_1rf] gap-14 my-10 mt-40 '>
+            <div className=' sm:grid grid-cols-4 gap-14 my-10 mt-40 '>
                 {/* ------Left Section------ */}
-                <div>
-                    <img className='mb-5 w-40' src={assets.logo} alt="" />
+                <div className='col-span-2'>
+                    <img className='h-[80px] w-60 mb-5 w-40' src={assets.logo} alt="" />
                     <p className='w-full md:w-2/3 text-gray-600 leading-6'>At Serenica, we blend expert medical care with mental wellness, ensuring a holistic approach to health. Our mission is to provide compassionate, accessible, and innovative healthcare solutions. With a focus on healing both body and mind, we strive to be your trusted partner in wellness and recovery.</p>
                 </div>
                 {/*------Center Section-------*/}
